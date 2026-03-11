@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.Random;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -50,6 +51,8 @@ public class Main {
         }
 
     }*/
+/*
+Task3
 
     public void main(String[] args){
         Random random=new Random();
@@ -77,6 +80,27 @@ public class Main {
         System.out.println("Random Even Number: "+randomEvenNumber);
         System.out.println("Full Container: "+fullcontainers);
         System.out.println("Total Containers: "+totalContainers);
+
+    }
+    */
+    public void main(String[] args){
+//        double netPrice=9.99;
+//        double vat=23;
+//        double grossPrice=netPrice+(netPrice/100*vat);
+//        double totalGrossValueSold=grossPrice*10000;
+//        double totalNetValueSold=netPrice*10000;
+
+        BigDecimal netPrice=new BigDecimal("9.99");
+        BigDecimal vat=new BigDecimal("0.23");
+        BigDecimal grossPrice=netPrice.multiply(BigDecimal.ONE.add(vat));
+        BigDecimal totalGrossValueSold=grossPrice.multiply(BigDecimal.valueOf(10000));
+        BigDecimal totalNetValueSold=totalGrossValueSold.divide(BigDecimal.ONE.add(vat));
+
+
+        System.out.println("Gross Price: "+grossPrice);
+        System.out.println("Total Value of Sold with gross Price: "+totalGrossValueSold);
+        System.out.println("Total Value of Sold with net Price: "+totalNetValueSold);
+
 
     }
 
