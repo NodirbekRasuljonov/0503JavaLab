@@ -4,8 +4,8 @@ import java.util.Random;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    /*
-    //Task1
+
+
     public void main(String[] args){
         float weightRasuljonovEarth=60.0f;
         float marsGravity=0.38f;
@@ -36,7 +36,7 @@ public class Main {
         charwithOperation=weightRasuljonovMarsChar+5;
         System.out.println("Operation with char: "+charwithOperation);
     }
-    *
+
     /*
     //Task 2
     public void main(String[] args){
@@ -83,6 +83,8 @@ Task3
 
     }
     */
+    /*
+    Task4
     public void main(String[] args){
 //        double netPrice=9.99;
 //        double vat=23;
@@ -102,7 +104,7 @@ Task3
         System.out.println("Total Value of Sold with net Price: "+totalNetValueSold);
 
 
-    }
+    }*/
 
 
 
